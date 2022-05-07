@@ -15,8 +15,9 @@ app.use((req, res, next) => {
 });
 
 // ROUTES
-app.use("/authentication", require("./routes/jwtAuth"));
+app.use("/api/authentication", require("./routes/jwtAuth"));
 app.use("/api/products", require("./routes/productRoutes"));
+app.use("/api/reviews", require("./routes/reviewsRoutes"));
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`Server running on PORT: ${PORT}`));
