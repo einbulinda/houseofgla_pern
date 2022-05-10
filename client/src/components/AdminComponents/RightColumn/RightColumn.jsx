@@ -1,4 +1,5 @@
 import React from "react";
+import CustomerReview from "../CustomerReview/CustomerReview";
 import Updates from "../Updates/Updates";
 import "./RightColumn.scss";
 
@@ -11,6 +12,7 @@ const RightColumn = () => {
       </div>
       <div>
         <h3>Customer Reviews</h3>
+        <CustomerReview />
       </div>
     </div>
   );
