@@ -64,6 +64,10 @@ exports.loginUser = asyncHandler(async (req, res) => {
   }
 });
 
+exports.updateUser = asyncHandler(async (req, res) => {
+  // to prepare the code for updating the user profile.
+});
+
 exports.verifyUser = asyncHandler(async (req, res) => {
   try {
     res.json(true);
