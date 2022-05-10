@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Sidebar.scss";
 import Logo from "assets/logos/mainLogo.png";
 import { UilBars, UilSignOutAlt } from "@iconscout/react-unicons";
@@ -7,12 +7,25 @@ import { SidebarData } from "data";
 
 const Sidebar = () => {
   const [selected, setSelected] = useState(0);
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  const getScreenWidth = () => {
+    setScreenWidth(window.innerWidth);
+  };
 
   const sidebarVariants = {
     true: { left: "0" },
     false: { left: "-60%" },
   };
+
+  useEffect(() => {
+    window.addEventListener("resize", getScreenWidth);
+
+    return () => {
+      window.removeEventListener("resize", getScreenWidth);
+    };
+  }, [screenWidth]);
 
   return (
     <>
@@ -26,7 +39,7 @@ const Sidebar = () => {
       <motion.div
         className="sidebar"
         variants={sidebarVariants}
-        animate={window.innerWidth <= 768 ? `${expanded}` : ""}
+        animate={screenWidth <= 768 ? `${expanded}` : ""}
       >
         {/* Logo */}
         <div className="logo">
