@@ -1,4 +1,5 @@
 import MainDash from "components/AdminComponents/MainDash/MainDash";
+import RightColumn from "components/AdminComponents/RightColumn/RightColumn";
 import Sidebar from "components/AdminComponents/Sidebar/Sidebar";
 import React from "react";
 
@@ -8,6 +9,7 @@ const AdminDash = () => {
       <div className="AppGlass">
         <Sidebar />
         <MainDash />
+        <RightColumn />
       </div>
     </div>
   );

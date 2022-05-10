@@ -7,6 +7,7 @@ import {
   UilChart,
   UilSignoutAlt,
 } from "@iconscout/react-unicons";
+import img from "assets/einImg.jpg";
 
 // Analytics Cards Imports
 import { UilUsdSquare, UilMoneyWithdrawal } from "@iconscout/react-unicons";
@@ -118,5 +119,27 @@ export const tableData = [
     trackingID: 243911,
     date: "18 May 2022",
     status: "Approved",
+  },
+];
+
+// Recent Updates
+export const UpdatesData = [
+  {
+    img: img,
+    name: "Einstein Bulinda",
+    notify: "has ordered 8Pc Granite Cookware.",
+    time: "25 seconds ago",
+  },
+  {
+    img: img,
+    name: "Collins Isabwa",
+    notify: 'has received Gold Line 11" Plate.',
+    time: "30 minutes ago",
+  },
+  {
+    img: img,
+    name: "Des Khamati",
+    notify: "has ordered 38Pc Gold Cutlery Set.",
+    time: "2 hours ago",
   },
 ];
