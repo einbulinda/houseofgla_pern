@@ -87,3 +87,36 @@ export const cardsData = [
     ],
   },
 ];
+
+export const tableData = [
+  {
+    name: "Arshia 7Pc Knife Set",
+    trackingID: 243987,
+    date: "4 April 2022",
+    status: "Approved",
+  },
+  {
+    name: "38Pc Cutlery Set",
+    trackingID: 277987,
+    date: "7 April 2022",
+    status: "Approved",
+  },
+  {
+    name: "6 X 6 Feather Duvet",
+    trackingID: 240087,
+    date: "14 April 2022",
+    status: "Pending",
+  },
+  {
+    name: "Silent Vaccum Cleaner",
+    trackingID: 2439444,
+    date: "1 May 2022",
+    status: "Ordered",
+  },
+  {
+    name: "8Ltr Pressure Cooker",
+    trackingID: 243911,
+    date: "18 May 2022",
+    status: "Approved",
+  },
+];
