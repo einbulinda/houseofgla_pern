@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Sidebar.scss";
 import Logo from "assets/logos/mainLogo.png";
-import { UilBars, UilSignOutAlt } from "@iconscout/react-unicons";
+import { UilBars, UilTimes, UilSignOutAlt } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
 import { SidebarData } from "data";
 
@@ -30,11 +30,11 @@ const Sidebar = () => {
   return (
     <>
       <div
-        className="bars"
+        className={`humbugger ${expanded ? "times" : "bars"}`} //Have the times when menu is open.
         style={expanded ? { left: "60%" } : { left: "5%" }}
         onClick={() => setExpanded(!expanded)}
       >
-        <UilBars />
+        {expanded ? <UilTimes /> : <UilBars />}
       </div>
       <motion.div
         className="sidebar"

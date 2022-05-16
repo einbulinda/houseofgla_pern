@@ -1,8 +1,8 @@
-import AdminDash from "theme/AdminDash";
+import RouterConfig from "navigation/RouterConfig";
 import "./App.scss";
 
 function App() {
-  return <AdminDash />;
+  return <RouterConfig />;
 }
 
 export default App;
