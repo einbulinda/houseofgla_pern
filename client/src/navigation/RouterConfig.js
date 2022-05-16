@@ -7,7 +7,7 @@ import Loading from "./Loading";
 const AdminLayout = Lazy(() => import("./Layouts/AdminLayout"));
 
 // Admin Routes
-const AdminDashboard = Lazy(() => import("pages/AdminPages/AdminDashboard"));
+const AdminDashboard = Lazy(() => import("pages/AdminPages/Dashboard/AdminDashboard"));
 
 // Catch All
 const NotFound = Lazy(() => import("./NotFound"));
