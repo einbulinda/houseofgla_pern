@@ -6,9 +6,10 @@ import {
   TableCell,
   TableBody,
   Paper,
+  Typography,
 } from "@mui/material";
 import React from "react";
-import "./Table.scss";
+// import "./Table.scss";
 import { tableData } from "data";
 
 const makeStyle = (status) => {
@@ -32,14 +33,13 @@ const makeStyle = (status) => {
 
 const BasicTable = () => {
   return (
-    <div className="Table">
-      <h3>Recent Orders</h3>
+    <Paper elevation={1} sx={{ marginY: "1.5rem", padding: "1rem" }}>
+      <Typography variant="h5" component="div" gutterBottom>
+        Recent Orders
+      </Typography>
 
-      <TableContainer
-        component={Paper}
-        style={{ boxShadow: "0px 13px 20px 0px #80808029", maxHeight: 280 }}
-      >
-        <Table sx={{ minWidth: 650 }} aria-label="simple table">
+      <TableContainer sx={{ maxHeight: 400 }}>
+        <Table stickyHeader aria-label="sticky table">
           <TableHead>
             <TableRow>
               <TableCell>Product</TableCell>
@@ -73,7 +73,7 @@ const BasicTable = () => {
           </TableBody>
         </Table>
       </TableContainer>
-    </div>
+    </Paper>
   );
 };
 

@@ -48,6 +48,11 @@
     transition: all 300ms ease;
     border-radius: 0.7rem;
     font-size: 14px;
+
+    .sideLink {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 .menuItem:hover {
@@ -75,7 +80,7 @@
 
 /* Tablets */
 @media screen and (max-width: 1200px) {
-    .menuItem > span {
+    .menuItem > .sideLink {
         display: none;
     }
 
@@ -94,7 +99,7 @@
         height: 100%;
     }
 
-    .menuItem > span {
+    .menuItem > .sideLink {
         display: block;
     }
 

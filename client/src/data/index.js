@@ -8,6 +8,7 @@ import {
   UilSignoutAlt,
 } from "@iconscout/react-unicons";
 import img from "assets/einImg.jpg";
+import * as url from "navigation/CONSTANTS";
 
 // Analytics Cards Imports
 import { UilUsdSquare, UilMoneyWithdrawal } from "@iconscout/react-unicons";
@@ -17,22 +18,27 @@ export const SidebarData = [
   {
     icon: UilEstate,
     heading: "Dashboard",
+    path: url.ADMIN,
   },
   {
     icon: UilClipboardAlt,
     heading: "Orders",
+    path: url.ORDERS,
   },
   {
     icon: UilUser,
     heading: "Customers",
+    path: url.CUSTOMERS,
   },
   {
     icon: UilPackage,
     heading: "Products",
+    path:url.PRODUCTS
   },
   {
     icon: UilChart,
     heading: "Analytics",
+    path:url.ANALYTICS
   },
 ];
 
