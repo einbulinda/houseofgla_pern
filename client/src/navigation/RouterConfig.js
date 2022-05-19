@@ -12,7 +12,7 @@ const AdminDashboard = Lazy(() =>
 );
 
 // Catch All
-const NotFound = Lazy(() => import("./NotFound"));
+const NotFound = Lazy(() => import("./NotFound/NotFound"));
 
 const RouterConfig = () => {
   return (
